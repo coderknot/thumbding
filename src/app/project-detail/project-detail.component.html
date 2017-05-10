@@ -1,9 +1,8 @@
 <div>
   <h3>{{(projectToDisplay | async)?.name}}</h3>
-  <h4>{{(projectToDisplay | async)?.creator}}</h4>
-  <p>{{(projectToDisplay | async)?.type}}</p>
-  <p>{{(projectToDisplay | async)?.descShort}}</p>
-  <p>{{(projectToDisplay | async)?.descLong}}</p>
-  <p>{{(projectToDisplay | async)?.goal}}</p>
-  <p>{{(projectToDisplay | async)?.reward}}</p>
+  <h4>Author: {{(projectToDisplay | async)?.creator}}</h4>
+  <p><strong>Type of Thumbding account:</strong> {{(projectToDisplay | async)?.type}}</p>
+  <p><strong>Description:</strong> {{(projectToDisplay | async)?.desc_long}}</p>
+  <p><strong>Our Thumb goal:</strong>{{(projectToDisplay | async)?.goal}}</p>
+  <p><strong>What you get for a thumb up:</strong> {{(projectToDisplay | async)?.reward}}</p>
 </div>
