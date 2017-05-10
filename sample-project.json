@@ -1,0 +1,29 @@
+{ "projects": [{
+    "name": "Fabulous hair",
+    "creator": "Chris Carr",
+    "type": "Fashion stylist",
+    "desc_short": "How to have the best hair",
+		"desc_long": "dkjd kjdf kjs kjdsf kjsdfkjd fjsd ksjdfkjasdlkfj ksjdf ksdj",
+		"goal": 100,
+		"reward": "pictures of my fabulous hair",
+		"amount": 0
+    }, {
+    "name": "The coolest thing ever",
+    "creator": "Ani DiFranco",
+    "type": "Her highest-selling and most acclaimed album, released in 1996.",
+    "desc_short": "most acclaimed album, released in 1996",
+		"desc_long": "most acclaimed album, released in 1996, most acclaimed album, released in 1996, most acclaimed album, released in 1996",
+		"goal": 50,
+		"reward": "",
+		"amount": 0
+      }, {
+    "name": "Axis Bold As Love",
+    "creator": "Jimi Hendrix",
+    "type": "Second studio album by the English-American band, released in 1967.",
+    "desc_short": "Second studio album by the English-, Second studio album by the English-Second studio album by the English-",
+		"desc_long": "Second studio album by the English-Second studio album by the English-Second studio album by the English-Second studio album by the English-Second studio album by the English-Second studio album by the English-",
+		"goal": 10,
+		"reward": "cool things",
+		"amount": 0
+  }]
+}
