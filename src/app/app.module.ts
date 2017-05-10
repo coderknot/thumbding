@@ -12,6 +12,7 @@ import { AboutComponent } from './about/about.component';
 import { ProjectListComponent } from './project-list/project-list.component';
 import { routing } from './app.routing';
 import { masterFirebaseConfig } from './api-keys';
+import { ProjectDetailComponent } from './project-detail/project-detail.component';
 
 export const firebaseConfig = {
   apiKey: masterFirebaseConfig.apiKey,
@@ -26,7 +27,8 @@ export const firebaseConfig = {
     AppComponent,
     HomeComponent,
     AboutComponent,
-    ProjectListComponent
+    ProjectListComponent,
+    ProjectDetailComponent
   ],
   imports: [
     BrowserModule,
