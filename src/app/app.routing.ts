@@ -4,6 +4,7 @@ import { HomeComponent } from './home/home.component';
 import { AboutComponent } from './about/about.component';
 import { ProjectListComponent } from './project-list/project-list.component';
 import { ProjectDetailComponent } from './project-detail/project-detail.component';
+import { NewPostComponent } from "./new-post/new-post.component";
 
 const appRoutes: Routes = [
 	{
@@ -21,6 +22,10 @@ const appRoutes: Routes = [
 	{
 		path: 'projects/:id',
 		component: ProjectDetailComponent
+	},
+	{
+		path: 'new-post',
+		component: NewPostComponent
 	}
  ];
 

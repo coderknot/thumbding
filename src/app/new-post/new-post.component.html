@@ -1,0 +1,46 @@
+<h3>Add a New Project!</h3>
+<div>
+  <div>
+    <label>Title:</label>
+    <br>
+    <input class="form-control" #newName>
+  </div>
+
+  <div>
+    <label>Author:</label>
+    <br>
+    <input class="form-control" #newCreator>
+  </div>
+
+  <div>
+    <label>Type of Project:</label>
+    <br>
+    <input class="form-control" #newType>
+  </div>
+
+  <div>
+    <label>Short Description:</label>
+    <br>
+    <input class="form-control" #newDescShort>
+  </div>
+
+  <div>
+    <label>Description:</label>
+    <br>
+    <textarea class="form-control" #newDescLong></textarea>
+  </div>
+</div>
+
+<div>
+  <label>Number of Thumbs you are trying to reach:</label>
+  <br>
+  <input type="number" class="form-control" #newGoal>
+</div>
+
+<div>
+  <label>What your thumbers get:</label>
+  <br>
+  <input class="form-control" #newReward>
+</div>
+
+<button (click)="submitForm(newName.value, newCreator.value, newType.value, newDescShort.value, newDescLong.value, newGoal.value, newReward.value); newName.value=''; newCreator.value=''; newType.value=''; newDescShort.value=''; newDescLong.value=''; newGoal.value=''; newReward.value=''">Add</button>
