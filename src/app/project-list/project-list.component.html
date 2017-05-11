@@ -1,6 +1,15 @@
 <h2>List of Projects to thumbs up</h2>
 
-<div *ngFor="let project of projects | async" class="panel panel-default">
+<div class="selectMenu">
+  <select class="form-control" (change)="typeOnChange($event.target.value)">
+    <option value="" disabled selected>Filter By Type</option>
+    <option value="all">All Types</option>
+    <option value="business">Business</option>
+    <option value="personal">Personal</option>
+  </select>
+</div>
+
+<div *ngFor="let project of projects | async | type:filterByType" class="panel panel-default">
   <div class="panel-body">
     <h3 (click)="goToDetailPage(project)"><em>{{project.name}}</em> by {{project.creator}}</h3>
     <h4>{{project.descShort}}</h4>

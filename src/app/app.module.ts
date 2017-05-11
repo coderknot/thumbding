@@ -5,7 +5,6 @@ import { HttpModule } from '@angular/http';
 import { AngularFireModule } from 'angularfire2';
 import { AngularFireDatabaseModule } from 'angularfire2/database';
 
-
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { AboutComponent } from './about/about.component';
@@ -16,6 +15,7 @@ import { ProjectDetailComponent } from './project-detail/project-detail.componen
 import { NewPostComponent } from './new-post/new-post.component';
 import { AdminComponent } from './admin/admin.component';
 import { EditProjectComponent } from './edit-project/edit-project.component';
+import { TypePipe } from './type.pipe';
 
 export const firebaseConfig = {
   apiKey: masterFirebaseConfig.apiKey,
@@ -34,7 +34,8 @@ export const firebaseConfig = {
     ProjectDetailComponent,
     NewPostComponent,
     AdminComponent,
-    EditProjectComponent
+    EditProjectComponent,
+    TypePipe
   ],
   imports: [
     BrowserModule,
