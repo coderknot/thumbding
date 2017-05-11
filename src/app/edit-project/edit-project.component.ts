@@ -22,4 +22,9 @@ export class EditProjectComponent implements OnInit {
     this.editDoneSender.emit();
   }
 
+  beginDeletingProject(projectToDelete) {
+    if(confirm("Are you sure you want to delete this project?")) {
+      this.projectService.deleteProject(projectToDelete);
+    }
+  }
 }
