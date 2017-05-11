@@ -5,6 +5,7 @@ import { AboutComponent } from './about/about.component';
 import { ProjectListComponent } from './project-list/project-list.component';
 import { ProjectDetailComponent } from './project-detail/project-detail.component';
 import { NewPostComponent } from "./new-post/new-post.component";
+import { AdminComponent } from "./admin/admin.component";
 
 const appRoutes: Routes = [
 	{
@@ -26,6 +27,9 @@ const appRoutes: Routes = [
 	{
 		path: 'new-post',
 		component: NewPostComponent
+	},
+	{ path: 'admin',
+		component: AdminComponent
 	}
  ];
 

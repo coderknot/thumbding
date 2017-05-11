@@ -1,0 +1,30 @@
+<h4>Edit Project</h4>
+
+<label>Name:</label>
+<input [(ngModel)]="selectedProject.name">
+<br>
+
+<label>Creator:</label>
+<input [(ngModel)]="selectedProject.creator">
+<br>
+
+<label>Type:</label>
+<input [(ngModel)]="selectedProject.type">
+<br>
+
+<label>Short Description:</label>
+<input [(ngModel)]="selectedProject.descShort">
+<br>
+
+<label>Long Description:</label>
+<input [(ngModel)]="selectedProject.descLong">
+<br>
+
+<label>Goal:</label>
+<input [(ngModel)]="selectedProject.goal">
+<br>
+
+<label>Reward:</label>
+<input [(ngModel)]="selectedProject.reward">
+
+<button (click)="beginUpdatingProject(selectedProject)">Update</button>

@@ -3,5 +3,14 @@
 <div *ngFor="let project of projects | async" class="panel panel-default">
   <div class="panel-body">
     <h3 (click)="goToDetailPage(project)"><em>{{project.name}}</em> by {{project.creator}}</h3>
+    <h4>{{project.descShort}}</h4>
+    <div *ngIf="currentRoute === '/admin'">
+      <p><strong>Type of Thumbding account:</strong> {{project.type}}</p>
+      <p><strong>Description:</strong> {{project.descLong}}</p>
+      <p><strong>Our Thumb goal:</strong>{{project.goal}}</p>
+      <p><strong>What you get for a thumb up:</strong> {{project.reward}}</p>
+      <hr>
+      <app-edit-project [selectedProject]="project"></app-edit-project>
+    </div>
   </div>
 </div>
