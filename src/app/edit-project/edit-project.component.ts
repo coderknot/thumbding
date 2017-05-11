@@ -1,4 +1,4 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, Input, Output, EventEmitter, OnInit } from '@angular/core';
 import { Project } from '../project.model';
 import { ProjectService } from '../project.service';
 
@@ -11,6 +11,7 @@ import { ProjectService } from '../project.service';
 
 export class EditProjectComponent implements OnInit {
   @Input() selectedProject;
+  @Output() editDoneSender = new EventEmitter();
 
   constructor(private projectService: ProjectService) { }
 
@@ -18,6 +19,7 @@ export class EditProjectComponent implements OnInit {
 
   beginUpdatingProject(projectToUpdate) {
     this.projectService.updateProject(projectToUpdate);
+    this.editDoneSender.emit();
   }
 
 }

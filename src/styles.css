@@ -7,6 +7,7 @@ nav {
   width: 100% !important;
   top: 0 !important;
   box-shadow: 5px 3px 10px #eee;
+  border-radius: 0 !important;
 }
 
 .footer {
